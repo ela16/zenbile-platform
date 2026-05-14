@@ -76,13 +76,13 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="flex flex-col sm:flex-row items-center justify-center gap-4"
             >
-              <button className="w-full sm:w-auto px-8 py-4 rounded-full bg-blue-600 text-white font-semibold text-lg hover:bg-blue-700 transition-all shadow-xl shadow-blue-600/30 flex items-center justify-center group">
+              <Link href="/login" className="w-full sm:w-auto px-8 py-4 rounded-full bg-blue-600 text-white font-semibold text-lg hover:bg-blue-700 transition-all shadow-xl shadow-blue-600/30 flex items-center justify-center group">
                 Send a Package
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </button>
-              <button className="w-full sm:w-auto px-8 py-4 rounded-full bg-white dark:bg-slate-800 text-slate-900 dark:text-white font-semibold text-lg border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700 transition-all shadow-sm">
+              </Link>
+              <Link href="/register" className="w-full sm:w-auto px-8 py-4 rounded-full bg-white dark:bg-slate-800 text-slate-900 dark:text-white font-semibold text-lg border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700 transition-all shadow-sm flex items-center justify-center">
                 Become a Rider
-              </button>
+              </Link>
             </motion.div>
           </div>
         </div>
@@ -150,12 +150,12 @@ export default function Home() {
               Join thousands of businesses and individuals who trust Zenbile for their daily logistics.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4 relative z-10">
-              <button className="px-8 py-4 rounded-full bg-white text-blue-600 font-bold text-lg hover:bg-blue-50 transition-colors shadow-lg">
+              <Link href="/register" className="px-8 py-4 rounded-full bg-white text-blue-600 font-bold text-lg hover:bg-blue-50 transition-colors shadow-lg flex items-center justify-center">
                 Create Account
-              </button>
-              <button className="px-8 py-4 rounded-full bg-blue-700/50 text-white font-bold text-lg border border-blue-400/30 hover:bg-blue-700/80 transition-colors">
-                Contact Sales
-              </button>
+              </Link>
+              <Link href="#services" className="px-8 py-4 rounded-full bg-blue-700/50 text-white font-bold text-lg border border-blue-400/30 hover:bg-blue-700/80 transition-colors flex items-center justify-center">
+                Learn More
+              </Link>
             </div>
           </div>
         </div>
