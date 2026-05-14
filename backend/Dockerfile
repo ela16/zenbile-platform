@@ -1,7 +1,8 @@
 FROM node:20-alpine
 WORKDIR /app
 COPY package*.json ./
-RUN npm install
+# Force install all dependencies including devDependencies so tsc is available
+RUN npm install --include=dev
 COPY . .
 RUN npm run build
 EXPOSE 5000
